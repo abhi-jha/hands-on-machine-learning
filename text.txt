@@ -1,0 +1,96 @@
+Deep Learning is best suited for complex problems such as image recognition,
+speech recognition, or natural language processing
+
+Spam filter
+
+supervised versus unsupervised learning, online versus batch learning, instance-
+based versus model-based learning.
+
+trainig set and training instance
+T, E, P
+
+accuracy
+
+Applying ML techniques to dig into large amounts of data can help discover patterns
+that were not immediately apparent. This is called data mining.
+
+There are so many different types of Machine Learning systems that it is useful to
+classify them in broad categories based on:
+• Whether or not they are trained with human supervision (supervised, unsuper‐
+vised, semisupervised, and Reinforcement Learning)
+• Whether or not they can learn incrementally on the fly (online versus batch
+learning)
+• Whether they work by simply comparing new data points to known data points,
+or instead detect patterns in the training data and build a predict
+
+These criteria are not exclusive; you can combine them in any way you like
+
+supervised, semisupervised, unsupervised, reinforcement learning
+
+anomaly detection.
+
+association rule learning.
+
+utility or fitness function
+
+cost function
+
+sampling noise; sampling bias
+
+feature engineering; feature selection; feature extraction
+
+overfitting
+
+Overfitting happens when the model is too complex relative to the
+amount and noisiness of the training data.
+
+regularization
+
+degrees of freedom to adapt the model
+to the training data: it can tweak both the height (θ 0 ) and the slope (θ 1 ) of the line
+
+You want to
+find the right balance between fitting the data perfectly and keeping the model simple
+enough to ensure that it will generalize well.
+
+hyperparameters : The amount of regularization to apply during learning can be controlled by a hyper‐
+parameter. A hyperparameter is a parameter of a learning algorithm (not of the
+model). As such, it is not affected by the learning algorithm itself; it must be set prior
+to training and remains constant during training. If you set the regularization hyper‐
+parameter to a very large value, you will get an almost flat model (a slope close to
+zero); the learning algorithm will almost certainly not overfit the training data, but it
+will be less likely to find a good solution. Tuning hyperparameters is an important
+part of building a Machine Learning system
+
+
+underfitting is the opposite of overfitting: it occurs when your
+model is too simple to learn the underlying structure of the data. For example, a lin‐
+ear model of life satisfaction is prone to underfit; reality is just more complex than
+the model, so its predictions are bound to be inaccurate, even on the training exam‐
+ples.
+
+A better option is to split your data into two sets: the training set and the test set. As
+these names imply, you train your model using the training set, and you test it using
+the test set. The error rate on new cases is called the generalization error (or out-of-
+sample error), and by evaluating your model on the test set, you get an estimation of
+this error. This value tells you how well your model will perform on instances it has
+never seen before.
+
+If the training error is low (i.e., your model makes few mistakes on the training set)
+but the generalization error is high, it means that your model is overfitting the train‐
+ing data.
+
+train:test::80:20
+
+validation set
+
+cross validation
+
+A model is a simplified version of the observations. The simplifications are meant to
+discard the superfluous details that are unlikely to generalize to new instances. How‐
+ever, to decide what data to discard and what data to keep, you must make assump‐
+tions. For example, a linear model makes the assumption that the data is
+fundamentally linear and that the distance between the instances and the straight line
+is just noise, which can safely be ignored.
+
+
